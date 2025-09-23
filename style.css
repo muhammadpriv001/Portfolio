@@ -1,0 +1,45 @@
+.Introduction {
+    background-color: #111421;
+}
+
+.Sub-Heading-Greeting {
+display: inline-block;
+color: #BEFFAF;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+font-weight: 500;
+margin: 0;
+margin-right: 0px; /* Add some spacing between the headings */
+}
+
+.Software-Title {
+margin-top: 0px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 150px;
+font-weight: 750;
+margin-bottom: 0px;
+margin-right: 10px; /* Add some spacing between the headings */
+}
+
+.Engineer-Title {
+margin-top: 0px;
+margin-bottom: 50px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 650;
+font-size: 100px;
+font-style: italic;
+margin-right: 10px; /* Add some spacing between the headings */
+}
+
+.Contact-Button {
+    background-color: #BEFFAF;
+    margin-top: 0px;
+    height: 50px;
+    width: 150px;
+    font-size: larger;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+}
