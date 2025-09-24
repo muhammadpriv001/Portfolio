@@ -1,47 +1,203 @@
-.Introduction {
-    background-color: #BEFFAF;
+@keyframes slideIn {
+  to {
+        opacity: 1;
+        transform: translateX(0);
+  }
 }
 
-.Sub-Heading-Greeting {
+@keyframes Profile-Picture-Frame {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Hero {
+    background-color: #BEFFAF;
+    display: flex;
+    border-radius: 3vw;
+}
+
+.Greeting {
+    display: flex;
+    margin-left: 7vw;
+    margin-top: 5vw;
+}
+
+.Hi {
     display: inline-block;
     color: #111421;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    margin: 0;
-    margin-right: 0px; /* Add some spacing between the headings */
+    font-size: 1.8vw;
+    font-weight: normal;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    margin: 0vw;
+    margin-right: 0.1vw;
+}
+
+.Hand-Image {
+    display: inline-block;
+    height: auto;
+    width: 1.3vw;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    margin-right: 0.3vw;
+}
+
+.Name {
+    display: inline-block;
+    color: #111421;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vw;
+    font-weight: normal;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    margin: 0px;
+    margin-right: 0px;
+}
+
+.Introduction {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Professional {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7vw;
 }
 
 .Software-Title {
-    margin: 0;
-    margin-top: 10px;
+    display: flex;
     color: #111421;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 130px;
-    font-weight: 550;
-    margin-bottom: 0px;
-    margin-right: 10px; /* Add some spacing between the headings */
+    margin: 0vw;
+    margin-top: 1vw;
+    font-size: 8vw;
+    font-weight: bolder;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    margin-bottom: 0vw;
+    margin-right: 1vw;
 }
 
 .Engineer-Title {
-    margin-top: 0px;
-    margin-bottom: 80px;
+    display: flow-root;
+    margin-top: 0vw;
+    margin-bottom: 3vw;
     color: #111421;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 550;
-    font-size: 100px;
+    font-weight: bold;
+    font-size: 7vw;
     font-style: italic;
-    margin-right: 10px; /* Add some spacing between the headings */
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    margin-right: 1vw;
 }
 
 .Contact-Button {
     background-color: #111421;
-    color: white;
-    margin-top: 0px;
-    height: 50px;
-    width: 150px;
-    font-size: larger;
-    font-weight: 700;
+    margin-top: 0vw;
+    height: 3.1vw;
+    width: 11vw;
+    font-size: 1vw;
+    font-weight: lighter;
     border: none;
-    border-radius: 12px;
+    border-radius: 1vw;
+    margin-bottom: 10vw;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    
+    .Value {
+        display: inline-block;
+        color: white;
+        vertical-align: middle;
+        margin-bottom: 1.5vw;
+        margin-right: 0.3vw;
+    }
+
+    .Arrow {
+        display: inline-block;
+        color: #BEFFAF;
+        font-size: 2vw;
+        font-weight: 90vw;
+        text-align: justify;
+        vertical-align: middle;
+        margin-bottom: 2vw;
+    }
+    
+}
+
+.Contact-Button :hover {
+    background-color: white;
+    border: none;
+    border-radius: 1vw;
+    
+    .Value {
+        display: inline-block;
+        color: black;
+        vertical-align: middle;
+        margin-bottom: 1.5vw;
+        margin-right: 0.3vw;
+    }
+
+    .Arrow {
+        display: inline-block;
+        color: #BEFFAF;
+        font-size: 2vw;
+        font-weight: 90vw;
+        text-align: justify;
+        vertical-align: middle;
+        margin-bottom: 2vw;
+    }
+    
+}
+
+.Profile-Picture {
+    display: flex;
+    position: relative;
+    height: 1vw;
+    width: 1vw;
+    margin-left: 5vw;
+    
+}
+
+.Lower-Circle {
+  position: relative;
+  z-index: 1;
+
+  .img {
+    height: 30vw;
+    width: 30vw;
+    animation: Profile-Picture-Frame 10s linear infinite;
+  }
+}
+
+.Upper-Circle {
+  position: absolute;
+  z-index: 3;
+  left: 1vw;
+  top: 1vw;
+
+  .img {
+    height: 28vw;
+    width: 28vw;
+    animation: Profile-Picture-Frame 10s linear infinite reverse;
+  }
 }
