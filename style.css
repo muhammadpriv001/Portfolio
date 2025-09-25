@@ -25,6 +25,13 @@ body {
   background-color: #111421;
 }
 
+.Header-Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vw;
+}
+
 .navTabs {
   display: flex;
   justify-content: center;
@@ -52,19 +59,21 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: white;
-  padding: 6px 16px;
+  padding: 10px 16px;
   width: fit-content;
   text-decoration: none;
 }
 
 .navTabs li a:hover {
   background-color: #BEFFAF;
+  color:  #111421;
   border-radius: 35px;
   margin: 0;
 }
 
 .navTabs li a.active {
   background-color: #04aa83;
+  color: #17344d;
   border-radius: 35px;
 }
 
@@ -77,6 +86,45 @@ body {
 
 #menu-toggle {
   display: none;
+}
+
+.Hire-Button {
+  background-color: #BEFFAF;
+  height: 4.5vw;
+  width: 11vw;
+  margin: 0;
+  padding: 0vw;
+  font-size: 1.3vw;
+  font-weight: lighter;
+  font-weight: bold;
+  border: none;
+  border-radius: 1vw;
+}
+
+.Hire-Button .Value {
+  display: inline-block;
+  color: #111421;
+  vertical-align: middle;
+  margin-bottom: 0.3vw;
+  margin-right: 0.1vw;
+}
+
+.Hire-Button .Arrow {
+  display: inline-block;
+  color: #111421;
+  font-size: 3vw;
+  font-weight: 90vw;
+  text-align: justify;
+  vertical-align: middle;
+  margin-bottom: 1vw;
+}
+
+.Hire-Button:hover {
+  background-color: white;
+}
+
+.Hire-Button:hover .Value {
+  color: #111421;
 }
 
 header {
@@ -366,7 +414,7 @@ header {
     align-items: center;
   }
 
-  #menu-toggle:checked + .hamburger + .navTabs {
+  #menu-toggle:checked + .hamburger + .Header-Buttons .navTabs {
     max-height: 60vh;         
     opacity: 1;                 
     transform: translateY(0);   
@@ -382,6 +430,35 @@ header {
     display: inline-block;
     padding: 8px 16px;
     font-size: 20px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .Contact-Link {
+    position: relative;
+    color: transparent !important;
+    display: block;             
+    width: 80%;                  
+    max-width: 300px;            
+    text-align: center;
+    margin: 10px auto;           
+    padding: 12px 20px;
+    background-color: #BEFFAF;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+
+  .Contact-Link::before {
+    content: "Hire Me ↗";
+    position: absolute;
+    top: 1.6vw;
+    left: 0vw;
+    right: 0;
+    color: #111421;
+    font-weight: bold;
+    text-align: center;
   }
 
   header {
@@ -539,6 +616,7 @@ header {
   .Contact-Button {
       background-color: #111421;
       margin-top: 1vw;
+      padding-bottom: 2.2vw;
       height: 6vw;
       width: 22vw;
       font-size: 2.3vw;
