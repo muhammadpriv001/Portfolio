@@ -79,11 +79,16 @@ body {
   display: none;
 }
 
+header {
+  padding-top: 15px;
+}
+
 .Hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 0px;
+    padding-top: 20px;
 }
 
 .Home {
@@ -195,11 +200,36 @@ body {
     line-height: 1;
 }
 
+.Contact {
+  display: inline-flex;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.Customer-Review{
+  padding-left: 5vw;
+}
+
+.Customer-Review img{
+  height: 1.5vw;
+  padding-bottom: 0vw;
+}
+
+.Customer-Review .Customer-Count{
+  margin-top: 0.3vw;
+  padding-top: 0vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.8vw;
+  font-weight: lighter;
+}
+
 .Contact-Button {
     background-color: #111421;
-    margin-top: 0vw;
+    margin-top: 0.3vw;
     height: 3.5vw;
-    width: 11vw;
+    width: 13vw;
     font-size: 1.2vw;
     font-weight: bold;
     border: none;
@@ -354,8 +384,12 @@ body {
     font-size: 20px;
   }
 
+  header {
+    padding-top: 0;
+  }
+
   main {
-    padding-top: 70px;
+    padding-top: 73px;
   }
 
   .Hero {
@@ -477,26 +511,47 @@ body {
       line-height: 1;
   }
 
+  .Contact {
+    display: inline-flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .Customer-Review{
+    padding-left: 7vw;
+  }
+
+  .Customer-Review img{
+    height: 3vw;
+    padding-bottom: 0vw;
+  }
+
+  .Customer-Review .Customer-Count{
+    margin-top: 0.1vw;
+    padding-top: 0vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vw;
+    font-weight: lighter;
+  }
+
   .Contact-Button {
       background-color: #111421;
-      margin-top: 0vw;
+      margin-top: 1vw;
       height: 6vw;
-      width: 20vw;
-      font-size: 2vw;
+      width: 22vw;
+      font-size: 2.3vw;
       font-weight: bold;
       border: none;
       border-radius: 2vw;
-      opacity: 0;
-      transform: translateX(-100%);
-      animation: slideIn 1s forwards;
-      animation-delay: 0.5s;
   }
 
   .Contact-Button .Value {
       display: inline-block;
       color: white;
       vertical-align: middle;
-      margin-bottom: 1.9vw;
+      margin-bottom: 2.4vw;
       margin-right: 0.2vw;
   }
 
@@ -507,7 +562,7 @@ body {
       font-weight: 90vw;
       text-align: justify;
       vertical-align: middle;
-      margin-bottom: 2.5vw;
+      margin-bottom: 3vw;
   }
 
   .Contact-Button:hover {
