@@ -5,6 +5,13 @@
   }
 }
 
+@keyframes profileIn {
+  to {
+        opacity: 1;
+        transform: translatey(0);
+  }
+}
+
 @keyframes Profile-Picture-Frame {
   from {
     transform: rotate(0deg);
@@ -15,48 +22,60 @@
 }
 
 .Hero {
-    background-color: #BEFFAF;
     display: flex;
-    border-radius: 3vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.Home {
+  background-color: #BEFFAF;
+  border-radius: 4vw;
+  margin: 0vw;
+  padding: 0vw;
+  height: auto;
+  width: 99%;
+  justify-content: center;
+  align-items: center;
 }
 
 .Greeting {
     display: flex;
     margin-left: 7vw;
-    margin-top: 5vw;
+    margin-top: 10vw;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
 }
 
 .Hi {
     display: inline-block;
     color: #111421;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8vw;
+    font-size: 2vw;
     font-weight: normal;
     text-align: left;
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slideIn 1s forwards;
-    animation-delay: 0.5s;
     margin: 0vw;
-    margin-right: 0.1vw;
+    margin-right: 0.6vw;
 }
 
 .Hand-Image {
     display: inline-block;
-    height: auto;
-    width: 1.3vw;
+    height: 1.8vw;
+    width: 1.5vw;
     opacity: 0;
     transform: translateX(-100%);
     animation: slideIn 1s forwards;
     animation-delay: 0.5s;
-    margin-right: 0.3vw;
+    margin-right: 0.7vw;
 }
 
 .Name {
     display: inline-block;
     color: #111421;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8vw;
+    font-size: 2vw;
     font-weight: normal;
     opacity: 0;
     transform: translateX(-100%);
@@ -64,17 +83,24 @@
     animation-delay: 0.5s;
     margin: 0px;
     margin-right: 0px;
+    margin-left: 0vw;
 }
 
 .Introduction {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-left: 7vw;
 }
 
 .Professional {
     display: flex;
     flex-direction: column;
-    margin-left: 7vw;
+    margin: 0vw;
+    margin-left: 0vw;
+    margin-bottom: 0vw;
+    padding: 0vw;
+    overflow: hidden;
+    align-self: flex-start;
 }
 
 .Software-Title {
@@ -83,7 +109,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0vw;
     margin-top: 1vw;
-    font-size: 8vw;
+    font-size: 7vw;
     font-weight: bolder;
     opacity: 0;
     transform: translateX(-100%);
@@ -91,113 +117,127 @@
     animation-delay: 0.5s;
     margin-bottom: 0vw;
     margin-right: 1vw;
+    line-height: 1;
 }
 
 .Engineer-Title {
     display: flow-root;
     margin-top: 0vw;
-    margin-bottom: 3vw;
+    margin-bottom: 5vw;
     color: #111421;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 7vw;
+    font-size: 6vw;
     font-style: italic;
     opacity: 0;
     transform: translateX(-100%);
     animation: slideIn 1s forwards;
     animation-delay: 0.5s;
     margin-right: 1vw;
+    line-height: 1;
 }
 
 .Contact-Button {
     background-color: #111421;
     margin-top: 0vw;
-    height: 3.1vw;
+    height: 3.5vw;
     width: 11vw;
-    font-size: 1vw;
-    font-weight: lighter;
+    font-size: 1.2vw;
+    font-weight: bold;
     border: none;
     border-radius: 1vw;
-    margin-bottom: 10vw;
     opacity: 0;
     transform: translateX(-100%);
     animation: slideIn 1s forwards;
     animation-delay: 0.5s;
-    
-    .Value {
-        display: inline-block;
-        color: white;
-        vertical-align: middle;
-        margin-bottom: 1.5vw;
-        margin-right: 0.3vw;
-    }
-
-    .Arrow {
-        display: inline-block;
-        color: #BEFFAF;
-        font-size: 2vw;
-        font-weight: 90vw;
-        text-align: justify;
-        vertical-align: middle;
-        margin-bottom: 2vw;
-    }
-    
 }
 
-.Contact-Button :hover {
-    background-color: white;
-    border: none;
-    border-radius: 1vw;
-    
-    .Value {
-        display: inline-block;
-        color: black;
-        vertical-align: middle;
-        margin-bottom: 1.5vw;
-        margin-right: 0.3vw;
-    }
+.Contact-Button .Value {
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin-bottom: 1.3vw;
+    margin-right: 0.2vw;
+}
 
-    .Arrow {
-        display: inline-block;
-        color: #BEFFAF;
-        font-size: 2vw;
-        font-weight: 90vw;
-        text-align: justify;
-        vertical-align: middle;
-        margin-bottom: 2vw;
-    }
-    
+.Contact-Button .Arrow {
+    display: inline-block;
+    color: #BEFFAF;
+    font-size: 2vw;
+    font-weight: 90vw;
+    text-align: justify;
+    vertical-align: middle;
+    margin-bottom: 2vw;
+}
+
+.Contact-Button:hover {
+    background-color: white;
+}
+
+.Contact-Button:hover .Value {
+    color: black;
 }
 
 .Profile-Picture {
     display: flex;
     position: relative;
-    height: 1vw;
-    width: 1vw;
-    margin-left: 5vw;
-    
+    padding: 0vw;
+    height: 34vw;
+    width: auto;
+    margin-top: 0vw;
+    object-fit: contain;
+    top: 0vw;
+    margin: 0vw;
+    padding: 0vw;
 }
 
 .Lower-Circle {
   position: relative;
   z-index: 1;
+  left: 3vw;
+  top: -9.5vw;
+  object-fit: contain;
+}
 
-  .img {
-    height: 30vw;
-    width: 30vw;
-    animation: Profile-Picture-Frame 10s linear infinite;
-  }
+.Lower-Circle .img {
+  height: 40vw;
+  width: 40vw;
+  animation: Profile-Picture-Frame 15s linear infinite;
 }
 
 .Upper-Circle {
   position: absolute;
   z-index: 3;
-  left: 1vw;
-  top: 1vw;
+  left: 5vw;
+  top: -7.5vw;
+}
 
-  .img {
-    height: 28vw;
-    width: 28vw;
-    animation: Profile-Picture-Frame 10s linear infinite reverse;
-  }
+.Upper-Circle .img {
+  height: 36vw;
+  width: 36vw;
+  animation: Profile-Picture-Frame 15s linear infinite reverse;
+}
+
+.Profile {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  height: 43vw;
+  width: auto;
+  left: 5vw;
+  top: -12vw;
+  margin-bottom: 0vw;
+  padding: 0vw;
+  object-fit: contain;
+}
+
+.Profile .img {
+  object-fit: contain;
+  height: 46vw;
+  margin-bottom: 0vw;
+  margin: ovw;
+  opacity: 0;
+  transform: translateY(10%);
+  animation: profileIn 1s forwards;
+  animation-delay: 0.5s;
 }
