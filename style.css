@@ -974,4 +974,292 @@ header {
     animation: profileIn 1s forwards;
     animation-delay: 0.5s;
   }
+
+  .aboutMe {
+    padding-top: 12vw;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headAbout {
+    display: inline-flex;
+    position: relative;
+    color: #BEFFAF;
+    font-size: 1.3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 4vw;
+    left: 5vw;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .handAbout {
+    height: 1.5vw;
+    width: 1.5vw;
+    padding-right: 5vw;
+  }
+
+  .handImg {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  .textHeadAbout {
+    height: 5vw;
+  }
+
+  .aboutMeText {
+    font-size: 5vw;
+    font-weight: lighter;
+  }
+
+  .designation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5vw;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4.5vw;
+    padding: 0vw;
+    margin-top: 0vw;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .row1des {
+    margin-top: 13vw;
+    margin-bottom: -2vw;
+    padding: 0vw;
+  }
+
+  .row2des {
+    margin-top: 2vw;
+    padding: 0vw;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5vw;
+    width: 90vw;
+  }
+
+  .skill1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 3.3vw;
+  }
+
+  .skill1Bar {
+    height: 1.2vw;
+    border: 2px solid #464646;
+    padding: 2px;
+    border-radius: 2vw;
+    margin-top: -2vw;
+    margin-bottom: 5vw;
+  }
+
+  .bar1 {
+    height: 0.05vw;
+    width: 70%;
+    padding: 2px 2px;
+    border-radius: 2vw;
+    background-color: #BEFFAF;
+    animation: loader 1s ease forwards;
+    animation-delay: 0.5s;
+  }
+
+  .skill2 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 3.3vw;
+  }
+
+  .skill2Bar {
+    height: 1.2vw;
+    border: 2px solid #464646;
+    padding: 2px;
+    border-radius: 2vw;
+    margin-top: -2vw;
+    margin-bottom: 5vw;
+  }
+
+  .bar2 {
+    height: 0.05vw;
+    width: 70%;
+    padding: 2px 2px;
+    border-radius: 2vw;
+    background-color: #BEFFAF;
+    animation: loader 1s ease forwards;
+    animation-delay: 0.5s;
+  }
+
+  .skill3 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 3.3vw;
+  }
+
+  .skill3Bar {
+    height: 1.2vw;
+    border: 2px solid #464646;
+    padding: 2px;
+    border-radius: 2vw;
+    margin-top: -2vw;
+    margin-bottom: 5vw;
+  }
+
+  .bar3 {
+    height: 0.05vw;
+    width: 70%;
+    padding: 2px 2px;
+    border-radius: 2vw;
+    background-color: #BEFFAF;
+    animation: loader 1s ease forwards;
+    animation-delay: 0.5s;
+  }
+
+  .aboutVisual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vw;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -3vw;
+    border: 2px solid #464646;
+    height: 43vw;
+    width: 43vw;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: -21vw;
+  }
+
+  .numProjects {
+    color: white;
+    font-size: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0vw;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: profileIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .textProjects {
+    color: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: light;
+    margin-bottom: 8vw;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: profileIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 36vw;
+    border: 2px solid #464646;
+    height: 43vw;
+    width: 43vw;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: -21vw;
+  }
+
+  .numTestimonials {
+    color: white;
+    font-size: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0vw;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: profileIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .textTestimonials {
+    color: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: light;
+    margin-bottom: 8vw;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: profileIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .participations {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -3vw;
+    border: 2px solid #464646;
+    height: 43vw;
+    width: 43vw;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .numPart {
+    color: white;
+    font-size: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0vw;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: profileIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .textPart {
+    color: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: light;
+    margin-bottom: 8vw;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: profileIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
 }
