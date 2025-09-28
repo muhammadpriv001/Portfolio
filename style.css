@@ -21,6 +21,12 @@
   }
 }
 
+@keyframes loader {
+  from {
+    width: 0%;
+  }
+}
+
 body {
   background-color: #111421;
 }
@@ -37,12 +43,12 @@ body {
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
-  padding: 3vw;
+  padding: 0vw;
   list-style-type: none;
   background-color: #111421;
   border: 1px solid #464646;
   border-radius: 35px;
-  padding: 12px;
+  padding: 8px;
   position: sticky;
   top: 0;
 }
@@ -59,7 +65,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: white;
-  padding: 10px 16px;
+  padding: 6px 7px;
   width: fit-content;
   text-decoration: none;
 }
@@ -90,8 +96,8 @@ body {
 
 .Hire-Button {
   background-color: #BEFFAF;
-  height: 4.5vw;
-  width: 11vw;
+  height: 3.3vw;
+  width: 9vw;
   margin: 0;
   padding: 0vw;
   font-size: 1.3vw;
@@ -102,21 +108,25 @@ body {
 }
 
 .Hire-Button .Value {
-  display: inline-block;
+  display: inline-flex;
+  object-fit: contain;
   color: #111421;
+  height: 1.3vw;
   vertical-align: middle;
-  margin-bottom: 0.3vw;
+  margin-bottom: 0vw;
   margin-right: 0.1vw;
 }
 
 .Hire-Button .Arrow {
-  display: inline-block;
+  display: inline-flex;
+  object-fit: contain;
   color: #111421;
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: 90vw;
+  height: 3vw;
   text-align: justify;
   vertical-align: middle;
-  margin-bottom: 1vw;
+  margin-bottom: 0vw;
 }
 
 .Hire-Button:hover {
@@ -128,7 +138,7 @@ body {
 }
 
 header {
-  padding-top: 15px;
+  padding-top: 0px;
 }
 
 .Hero {
@@ -136,7 +146,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0px;
-    padding-top: 20px;
+    padding-top: 9px;
 }
 
 .Home {
@@ -376,6 +386,256 @@ header {
   transform: translateY(10%);
   animation: profileIn 1s forwards;
   animation-delay: 0.5s;
+}
+
+.aboutText {
+  padding-right: 10vw;
+}
+
+.aboutMe {
+  padding-top: 8vw;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3vw;
+  margin-left: 3vw;
+}
+
+.aboutText {
+  margin-right: 0vw;
+}
+
+.headAbout {
+  display: inline-flex;
+  color: #BEFFAF;
+  font-size: 1.3vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.handAbout {
+  height: 1.5vw;
+  width: 1.5vw;
+  padding-right: 0.3vw;
+}
+
+.handImg {
+  height: 1.2vw;
+  width: 1.2vw;
+}
+
+.textHeadAbout {
+  height: 1vw;
+}
+
+.aboutMeText {
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.designation {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.9vw;
+  padding: 0vw;
+  margin-top: -1vw;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.row1des {
+  margin-bottom: -2vw;
+  padding: 0vw;
+}
+
+.row2des {
+  margin-top: 2vw;
+  padding: 0vw;
+}
+
+.skills {
+  width: 33vw;
+}
+
+.skill1 {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1vw;
+}
+
+.skill1Bar {
+  height: 0.3vw;
+  border: 2px solid #464646;
+  padding: 2px;
+  border-radius: 2vw;
+  margin-top: -0.5vw;
+  margin-bottom: 2vw;
+}
+
+.bar1 {
+  height: 0.05vw;
+  width: 70%;
+  padding: 1.5px 1.5px;
+  border-radius: 2vw;
+  background-color: #BEFFAF;
+  animation: loader 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.skill2 {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1vw;
+}
+
+.skill2Bar {
+  height: 0.3vw;
+  border: 2px solid #464646;
+  padding: 2px;
+  border-radius: 2vw;
+  margin-top: -0.5vw;
+  margin-bottom: 2vw;
+}
+
+.bar2 {
+  height: 0.05vw;
+  width: 50%;
+  padding: 1.5px 1.5px;
+  border-radius: 2vw;
+  background-color: #BEFFAF;
+  animation: loader 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.skill3 {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1vw;
+}
+
+.skill3Bar {
+  height: 0.3vw;
+  border: 2px solid #464646;
+  padding: 2px;
+  border-radius: 2vw;
+  margin-top: -0.5vw;
+  margin-bottom: 2vw;
+}
+
+.bar3 {
+  height: 0.05vw;
+  width: 60%;
+  padding: 1.5px 1.5px;
+  border-radius: 2vw;
+  background-color: #BEFFAF;
+  animation: loader 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.aboutVisual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -3vw;
+  border: 2px solid #464646;
+  height: 17vw;
+  width: 17vw;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: -3vw;
+}
+
+.numProjects {
+  color: white;
+  font-size: 4.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0vw;
+}
+
+.textProjects {
+  color: #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: light;
+  margin-bottom: 3vw;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 7vw;
+  border: 2px solid #464646;
+  height: 17vw;
+  width: 17vw;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: -3vw;
+}
+
+.numTestimonials {
+  color: white;
+  font-size: 4.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0vw;
+}
+
+.textTestimonials {
+  color: #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: light;
+  margin-bottom: 3vw;
+}
+
+.participations {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -3vw;
+  border: 2px solid #464646;
+  height: 17vw;
+  width: 17vw;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.numPart {
+  color: white;
+  font-size: 4.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0vw;
+}
+
+.textPart {
+  color: #bfbfbf;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: light;
+  margin-bottom: 3vw;
 }
 
 @media (max-width: 768px) {
